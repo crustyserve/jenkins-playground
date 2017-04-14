@@ -6,5 +6,10 @@ pipeline {
         echo 'Building'
       }
     }
+    stage('code-quality') {
+      steps {
+        echo 'phpcs'
+      }
+    }
   }
 }
